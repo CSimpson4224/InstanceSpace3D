@@ -31,6 +31,7 @@ opts.sifted.Replicates = 100;
 
 opts.pilot.analytic = false;        % Calculate the analytical or numerical solution
 opts.pilot.ntries = 5;              % Number of attempts carried out by PBLDR
+opts.pilot.ISA3 = false;
 
 opts.cloister.pval = 0.05;
 opts.cloister.cthres = 0.7;
@@ -41,7 +42,9 @@ opts.pythia.useweights = false;
 opts.pythia.uselibsvm = false;
 
 opts.trace.usesim = true;           % Use the actual or simulated data to calculate the footprints
-opts.trace.PI = 0.55;               % Purity threshold
+opts.trace.PI = 0.6;               % Purity threshold
+opts.trace.Trace2 = false;          % Use Trace2 instead of TRACE
+opts.trace.prior = [0.6,0.4];       % Trace2 Prior Weighting
 
 opts.outputs.csv = true;            %
 opts.outputs.web = false;            % NOTE: MAKE THIS FALSE IF YOU ARE USING THIS CODE LOCALY - This flag is only useful if the system is being used 'online' through matilda.unimelb.edu.au
